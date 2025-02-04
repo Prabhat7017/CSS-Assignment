@@ -1,0 +1,22 @@
+Qus.2 => Explain the difference between absolute and relative positions.
+
+In CSS, position is used to control the layout of elements on the page. The two common position values, absolute and relative, control the placement of elements in different ways. Here's a breakdown of the key differences between them:
+
+1. Relative Positioning (position: relative)
+When you set an element to position: relative, it is positioned relative to its normal position in the document flow.
+
+Effect on Element's Position: The element remains in the flow of the document, but you can shift it using the top, right, bottom, and left properties. The positioning is based on its initial position before any shifting.
+Space in Layout: Even though the element is shifted, it still occupies space in the layout where it would normally be.
+
+2. Absolute Positioning (position: absolute)
+When you set an element to position: absolute, it is positioned relative to the nearest positioned ancestor (an ancestor element that has position: relative, absolute, or fixed), or if there is none, it is positioned relative to the initial containing block (usually the viewport).
+
+Effect on Element's Position: The element is removed from the normal document flow, meaning it doesn’t affect the position of other elements. It’s placed at an exact position within the parent (or the body/viewport if no positioned ancestor exists).
+Space in Layout: Since the element is removed from the document flow, it does not occupy space in the layout anymore. Other elements will behave as if the absolutely positioned element doesn't exist.
+
+
+Relative Positioning (position: relative)	                                  |                     Absolute Positioning (position: absolute)
+Positioned relative to its original position in the document flow.	          |   Positioned relative to the nearest positioned ancestor (or the viewport if none).
+Remains in the document flow; other elements are affected by its position.	  |   Removed from the document flow; does not affect surrounding elements.
+Shifts an element from its normal position using top, right, bottom, left.	  |   Positioned exactly using top, right, bottom, left, relative to the parent or viewport.
+Useful when you want to adjust an element without removing it from the layout.|	  Useful when you need precise positioning and want the element to float independently of the layout.

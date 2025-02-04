@@ -1,0 +1,93 @@
+Qus. => What are the different types of CSS Selectors?
+
+CSS selectors are patterns used to select and style HTML elements. Here are the main types of CSS selectors:
+
+1. Universal Selector (*)
+Description: Selects all elements in the document.
+Example:
+* {
+  color: red;
+}
+This will apply the red color to all elements in the document.
+
+
+2. Type (Element) Selector
+Description: Selects all elements of a specified type (tag name).
+Example:
+p {
+  font-size: 16px;
+}
+This will apply the font size to all <p> elements.
+
+
+3. Class Selector (.)
+Description: Selects all elements with a specific class.
+Example:
+.my-class {
+  background-color: yellow;
+}
+This will apply the yellow background to all elements with the class my-class.
+
+
+
+4. ID Selector (#)
+Description: Selects the element with a specific ID. An ID should be unique within the page.
+Example:
+#my-id {
+  color: blue;
+}
+This will apply the blue color to the element with the ID my-id.
+
+
+
+5. Attribute Selector
+Description: Selects elements with a specific attribute or attribute value.
+Example:
+input[type="text"] {
+  border: 1px solid black;
+}
+This will apply the style to all <input> elements where the type attribute is "text".
+
+
+6. Pseudo-classes (:)
+Description: Selects elements in a specific state, such as when an element is hovered over, or the first child of a parent.
+Examples:
+:hover: When the element is hovered over.
+:first-child: Selects the first child of a parent.
+:nth-child(): Selects elements based on their position in a list.
+a:hover {
+  color: red;
+}
+p:first-child {
+  font-size: 20px;
+}
+li:nth-child(odd) {
+  background-color: lightgray;
+}
+7. Pseudo-elements (::)
+Description: Used to style a specific part of an element, like the first letter or line.
+Examples:
+::before: Inserts content before an element.
+::after: Inserts content after an element.
+::first-letter: Styles the first letter of an element.
+
+p::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+p::first-letter {
+  font-size: 2em;
+}
+8. Group Selector (,)
+Description: Selects multiple elements and applies the same style to all of them.
+Example:
+h1, h2, h3 {
+  color: purple;
+}
+This will apply the purple color to all <h1>, <h2>, and <h3> elements.
+9. Combinator Selectors
+These selectors define relationships between two elements:
+Descendant ( ): Selects elements that are descendants of another element.
+Child (>): Selects direct children of an element.
+Adjacent Sibling (+): Selects an element that is immediately next to a specified element.
+General Sibling (~): Selects all elements that are siblings of a specified element.
